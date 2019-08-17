@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Zhixiang}
+\familyname{Mao}
+\title{Software Engineer}
+\mobile{+86 158-2183-3372}
+\email{0mzxxzm0@gmail.com}
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+%\photo[64pt]{avatar.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
+%% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
+%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+\begin{document}
+\maketitle
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Work Experience}
+\cventry{Apr. 2018 - current}{Pinduoduo}
+{Backend, Java}
+{Software Engineer}{}{
+\begin{itemize}
+	\item \textbf{Migration of chatbot system}. This is part of the company-wise migration from Go to Java. To overcome the challenge of maintaining stability and compatibility, I divided the migration task into small pieces according to it’s functionality and rewrite it step by step with grayscale control. At last, the migration was completed in less than XXX months.
+	\item \textbf{Design and implementation of a Rasa-based chatbot system}.The previous implementation of the chatbot system couples business logic with machine learning algorithms, which makes it hard to add new features or business demands. To make it more extensible, we decided to redesign the system to provide defined machine learning services to business layer. The architecture is learned from Rasa(an open source machine learning framework for building contextual AI assistants) while reimplemented in Java. As the result, we can fulfill new business demands with just a little work.
+	\item \textbf{Offline speech recognition system}. The speech recognition system translates each telephone call into text. But the system crushes very often and results in missing of telephone calls. My main effort is to tracking each telephone call and retry unprocessed calls in case of a failure to get them eventually be processed.
+\end{itemize}
+}
+
+\section{Project}
+
+\cventry{2013 - 2015}
+{Website of Mathematics School }
+{Full-stack}
+{}{}{
+	Developed and maintained the website of Mathematics School for almost two years. Also provided technical support for the UESTC Online Judge system.
+}
+
+\cventry{2012 - 2014}
+{Food Ordering Website(TODO: name it XXX.)}
+{Full-stack}
+{}{}{
+	XXX is an Online Ordering platform built at the very beginning of \textit{Online Ordering Business}. As a full-stack
+	engineer, I was engaged in both frontend design and backend service development. We once achieved XXX orders per month but gave it up at the last because of the price-war started by \textit{meituan} and \textit{ele.me}.
+}
+
+\section{Education}
+\cventry{2015 - 2018}{M.S. in Network and Service computing}{Computer Science, Shanghai Jiao Tong University}{}{}{}
+\cventry{2011 - 2015}{B.S. in Information and Computing Science}{University of Electronic Science and Technology of China}{}{}{}
+
+\section{Publications}
+\cventry{Nov. 2017}
+{\textbf{Zhixiang Mao}\textnormal{, Shengan Zheng, Linpeng Huang, Yanyan Shen}}
+{A DAX-enabled mmap mechanism for log-structured in-memory file systems}{36th. IPCCC}
+{}{}{}
+
+\section{Skill}
+\cventry{Languages}{Java $\>$ C/C++ $>$ Go $\ge$ Kotlin $>$ Scheme}{}{}{}{}
+\cventry{English}{Fluent in writing and speaking}{CET-6: XXX}{}{}{}
+
+% \closesection{}                   % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+\end{document}
